@@ -10,5 +10,6 @@ do
   backupFile="$backupTarget/$(basename "$dir")-backup-$(date +%Y-%m-%d).tar.gz"
   tar -czf  "$backupFile" "$dir"
 done
+echo "Backup completed. Archives are stored in $backupTarget"
 
 
